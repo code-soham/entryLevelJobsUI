@@ -1,0 +1,55 @@
+.screen {
+  min-height: 100vh;
+  width: 100vw;
+}
+#navbar {
+  height: 5vh;
+  width: 100%;
+  color: #fdfdfd;
+}
+#filter {
+  width: 300px;
+  min-height: 95vh;
+  .form-group {
+    // background-color: aquamarine;
+    width: 240px;
+    margin: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    min-height: 100px;
+    .form-group {
+      width: 180px;
+      margin: 10px 5px;
+      scale: 0.8;
+    }
+  }
+}
+#resp {
+  width: calc(100vw - 300px);
+  height: inherit;
+  flex-wrap: wrap;
+  max-height: 95vh;
+  overflow-y: scroll;
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .loader-backdrop {
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    display: flex;
+    overflow: hidden;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+  }
+}

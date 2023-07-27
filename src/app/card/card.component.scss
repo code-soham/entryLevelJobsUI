@@ -1,0 +1,15 @@
+.card {
+    width: 400px;
+    max-width: 90vw;
+    min-height: 100px;
+    margin: 5px;
+    padding: 15px;
+    h6,p {
+        margin: 0;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+    p {
+        font-size: 10px;
+    }
+}

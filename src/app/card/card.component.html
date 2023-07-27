@@ -1,0 +1,34 @@
+<div class="card d-flex flex-row justify-content-between align-items-center">
+  <!-- For each job, displays position, apply link, category, location, type, company name -->
+  <div class="">
+    <h6>{{ job.position }}</h6>
+    <div class="row d-flex">
+      <div class="">
+        <p class="card-text">{{ job.companyName }}</p>
+      </div>
+      <div class="">
+        <p class="card-text">{{ job.location }}</p>
+      </div>
+    </div>
+    <div class="row d-flex">
+      <p class="badge m-2 bg-primary w-auto">{{ job.type?.name }}</p>
+      <p class="badge m-2 bg-primary w-auto">{{ job.category?.name }}</p>
+    </div>
+  </div>
+  <div class="">
+    <a href="{{ job.link }}" target="_blank">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="currentColor"
+        class="bi bi-arrow-up-right-circle-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>

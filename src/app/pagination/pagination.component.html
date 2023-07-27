@@ -1,0 +1,23 @@
+<nav aria-label="...">
+  <ul class="pagination">
+    <li class="page-item">
+      <ng-container *ngIf="hasPreviousPage">
+        <button class="page-link" (click)="previousPage()">Previous</button>
+      </ng-container>
+      <ng-container *ngIf="!hasPreviousPage">
+        <button class="page-link disabled">Previous</button>
+      </ng-container>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="">{{ filterForm.value.page }}</a>
+    </li>
+    <li class="page-item">
+        <ng-container *ngIf="hasNextPage">
+            <button class="page-link" (click)="nextPage()">Next</button>
+        </ng-container>
+        <ng-container *ngIf="!hasNextPage">
+            <button class="page-link disabled">Next</button>
+        </ng-container>
+    </li>
+  </ul>
+</nav>
